@@ -15,7 +15,7 @@ const highlightMenu = () =>{
     const elem = document.querySelector('.highlight')
     const homeMenu = document.querySelector('#home-page')
     const aboutMenu = document.querySelector('#about-page')
-    const servicesMenu = document.querySelector('#services-page')
+    const CertMenu = document.querySelector('#Cert-page')
     const projectMenu = document.querySelector('#project-page')
     let scrollPos = window.scrollY
 
@@ -27,11 +27,11 @@ const highlightMenu = () =>{
     }else if(window.innerWidth > 960 && scrollPos < 1400){
         aboutMenu.classList.add('highlight')
         homeMenu.classList.remove('highlight')
-        servicesMenu.classList.remove('highlight')
+        CertMenu.classList.remove('highlight')
         return
     }
     else if(window.innerWidth > 960 && scrollPos < 2345){
-        servicesMenu.classList.add('highlight')
+        CertMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         projectMenu.classList.remove('highlight')
         return
@@ -39,7 +39,7 @@ const highlightMenu = () =>{
     else if(window.innerWidth > 960 && scrollPos < 3100){
         projectMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
-        servicesMenu.classList.remove('highlight')
+        CertMenu.classList.remove('highlight')
         return
     }
     if((elem && window.innerWidth < 960 && scrollPos < 600)||elem){
@@ -50,3 +50,21 @@ const highlightMenu = () =>{
 
 window.addEventListener('scroll',highlightMenu);
 window.addEventListener('click',highlightMenu);
+
+$('.owl-carousel').owlCarousel({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:4
+        }
+    }
+})
