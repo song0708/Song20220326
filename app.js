@@ -24,19 +24,19 @@ const highlightMenu = () =>{
         homeMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         return
-    }else if(window.innerWidth > 960 && scrollPos < 1400){
+    }else if(window.innerWidth > 960 && scrollPos < 1500){
         aboutMenu.classList.add('highlight')
         homeMenu.classList.remove('highlight')
         CertMenu.classList.remove('highlight')
         return
     }
-    else if(window.innerWidth > 960 && scrollPos < 2345){
+    else if(window.innerWidth > 960 && scrollPos < 2300){
         CertMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         projectMenu.classList.remove('highlight')
         return
     }
-    else if(window.innerWidth > 960 && scrollPos < 3100){
+    else if(window.innerWidth > 960 && scrollPos < 3000){
         projectMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         CertMenu.classList.remove('highlight')
@@ -63,7 +63,13 @@ $('.owl-carousel').owlCarousel({
         0:{
             items:1
         },
-        1000:{
+        600:{
+            items:2
+        },
+        900:{
+            items:3
+        },
+        1200:{
             items:4
         }
     }
