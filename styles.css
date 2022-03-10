@@ -294,8 +294,8 @@
     transition: 0.3 ease-in;
 }
 .main__btn a{
+    z-index: 2;
     position:relative;
-    z-index:2;
     color: #fff;
     text-decoration: none;
 }
@@ -455,7 +455,7 @@
 @media screen and (max-width:1025px){
     .owl-stage-outer{
         margin:0 1%;
-    }
+    } 
 }
 @media screen and (max-width:900px){
     .owl-stage-outer{
