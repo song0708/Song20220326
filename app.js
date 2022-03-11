@@ -20,25 +20,24 @@ const highlightMenu = () =>{
     let scrollPos = window.scrollY
 
     //adds 'highlight' class to my menu items
-    if(window.innerWidth > 960 && scrollPos < 600){ 
+    if(window.innerWidth > 960 && scrollPos < window.innerHeight){ 
         homeMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         return
-    }else if(window.innerWidth > 960 && scrollPos < 1500){
+    }else if(window.innerWidth > 960 && scrollPos < window.innerHeight*2){
         aboutMenu.classList.add('highlight')
         homeMenu.classList.remove('highlight')
         CertMenu.classList.remove('highlight')
         return
     }
-    else if(window.innerWidth > 960 && scrollPos < 2300){
+    else if(window.innerWidth > 960 && scrollPos < window.innerHeight*3){
         CertMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         projectMenu.classList.remove('highlight')
         return
     }
-    else if(window.innerWidth > 960 && scrollPos < 3000){
+    else if(window.innerWidth > 960 && scrollPos < window.innerHeight*4){
         projectMenu.classList.add('highlight')
-        aboutMenu.classList.remove('highlight')
         CertMenu.classList.remove('highlight')
         return
     }
