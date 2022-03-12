@@ -199,7 +199,7 @@
     margin-top: 80px;
 }
 .autotype{
-    height:35vh;
+    height:15vh;
 }
 .hero__heading{
     font-size: 100px;
@@ -244,7 +244,7 @@
 }
 
 .main{
-    background-color:#fff ;
+    background-color:rgb(167, 237, 241) ;
     padding:2rem 0;
     height: 100vh;
 }
@@ -275,9 +275,9 @@
 }
 .main__content h2{
     font-size: 3rem;
-    background-color: #ff8177;
-    background:-webkit-linear-gradient(to top,#9114ff 0%,#da22ff 100%);
-    background-image: linear-gradient(to top,#8f0eff 0%,#da22ff 100%);
+    background: #36d1dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #36d1dc, #5b86e5);    
     background-size:100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -291,9 +291,9 @@
 }
 .main__btn{
     font-size:1.5rem;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right,#fcb045,#fd1d1d,#833ab4);
-    background: linear-gradient(to right,#fcb045,#fd1d1d,#833ab4);
+    background: #0575e6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575e6, #021b79); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575e6, #021b79);
     padding:20px 60px;
     border: none;
     border-radius: 4px;
@@ -321,7 +321,7 @@
     left:0;
     width:0;
     height: 100%;
-    background: #992cbb;
+    background: #2c8ebb;
     transition: all 0.35s;
     border-radius: 4px; 
 }
@@ -417,6 +417,22 @@
         margin-top: 0.5rem;
     }
 }
+@media screen and (max-width:400px){
+    .main__img--card h1{
+        font-size:1.5rem;
+    }
+    .main__img--card{
+        justify-content: start;
+    }
+@media screen and (max-width:400px){
+    .main__img--card h1{
+        font-size:1rem;
+    }
+    .main__img--card{
+        justify-content: start;
+    }
+}
+}
 
 /*Cert Section*/
 .Cert{
@@ -509,12 +525,12 @@
 }
 /*Footer CSS*/
 .footer__container{
-    background:linear-gradient(to right, #c0c0aa, #1cefff);
+    background-image:url("src/sea.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
     width:100%;
-    margin-top: 10rem;
+    margin-top: 0.3rem;
 }
 #footer__logo{
     color:#fff;
@@ -534,10 +550,12 @@
     justify-content: center;
     width:100%;
     display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .footer__links--items{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin: 20px;
     text-align: center;
