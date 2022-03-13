@@ -45,7 +45,7 @@
     margin: 0 auto;
     padding:0 50px;
 }
-#navbar__logo{
+.navbar__logo{
     background: #0575e6;
     background: -webkit-linear-gradient(to right, #0575e6, #021b79);
     background: linear-gradient(to right, #0575e6, #021b79);
@@ -439,7 +439,7 @@
         flex-direction:row;
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     .main__img--container{
         margin-top: 1.5rem;
     }
