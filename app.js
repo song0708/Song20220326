@@ -1,7 +1,5 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
-const navlogo = document.querySelector('#navbar__logo')
-
 //display Mobile Menu
 const mobileMenu = () =>{
     menu.classList.toggle('is-active');
@@ -17,7 +15,7 @@ const highlightMenu = () =>{
     const aboutMenu = document.querySelector('#about-page')
     const CertMenu = document.querySelector('#Cert-page')
     const projectMenu = document.querySelector('#project-page')
-    let scrollPos = window.scrollY
+    let scrollPos = window.scrollY;
 
     //adds 'highlight' class to my menu items
     if(window.innerWidth > 960 && scrollPos < window.innerHeight){ 
@@ -45,9 +43,25 @@ const highlightMenu = () =>{
         elem.classList.remove('highlight')
 
     }
+    
+}
+const whiteMenu = () =>{
+    const navbar = document.querySelector('#navbar')
+    let scrollPos = window.scrollY;
+    if(scrollPos > 80){
+        navbar.classList.add('white')
+        navbar.classList.remove('navbar')
+        return
+    }
+    else{
+        navbar.classList.remove('white')
+        navbar.classList.add('navbar')
+        return
+    }
 }
 
 window.addEventListener('scroll',highlightMenu);
+window.addEventListener('scroll',whiteMenu);
 window.addEventListener('click',highlightMenu);
 
 $('.owl-carousel').owlCarousel({

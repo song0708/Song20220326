@@ -19,9 +19,10 @@
 </head>
 <body>
     <!-- Navbar Section -->
-    <nav class="navbar">
+    
+    <nav class="navbar" id="navbar">
         <div class="navbar__container">
-            <a href="#home" id="navbar__logo">RESUME</a>
+            <a href="#" id="navbar__logo">RESUME</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -29,7 +30,7 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    <a href="#" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
                     <a href="#about" class="navbar__links" id="about-page">About</a>
@@ -44,24 +45,28 @@
                     <a href="#footer" class="button" id="contact">contact</a>
                 </li>
             </ul>
-        </div>
+            </div>
+        
     </nav>
     <!--hero Section-->
     <div class = "hero" id = "home">
             <div class="hero__container">
-            <div class="hero__heading">Hi! I'm <span>MingSong</span></div>
-            <div class="autotype" id="autotype">
-            <p class="hero__description">Welcome to my website</p><p></p>
+                <div class="hero__heading">Hi! I'm <span>MingSong</span></div>
+                    <div class="autotype" id="autotype">
+                        <p class="hero__description">Welcome to my website</p><p></p>
+                    </div>
+                    <button class="main__btn" onclick="location.href='#about'"><a href="#about">See More</a></button>
+                </div>
+                <video class="hero__video" autoplay loop muted>
+                    <source type="video/mp4" src="./src/background1.mp4">
+                </video> 
             </div>
-            <button class="main__btn" onclick="location.href='#about'"><a href="#about">See More</a></button>
-    </div>
-        <video class="hero__video" src="./src/background1.mp4"  autoplay loop muted></video> 
     </div>
     <!--about Section-->
     <div class="main" id="about">
         <div class="main__container">
             <div class="main__img--container">
-                <div class="main__img--card"><img src="src/Mugshot.jpg" style="width: 250px;height:400px"></div>
+                <div class="main__img--card"><img src="src/Mugshot.jpg" style="width: 25vh;height: 40vh;"></div>
             </div>
             <div class="main__content">
                 <h1>ABOUT ME</h1>
