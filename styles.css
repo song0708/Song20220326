@@ -49,6 +49,7 @@
     background: #0575e6;
     background: -webkit-linear-gradient(to right, #0575e6, #021b79);
     background: linear-gradient(to right, #0575e6, #021b79);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color:transparent ;
