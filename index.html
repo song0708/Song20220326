@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MingSong's Website</title>
+    <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="styles.css">
     <!--Bootstrap-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -18,8 +19,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
+    <!--Loading Section-->
+    <div class="loading__wrapper">
+        <div class="loading la-ball-climbing-dot la-dark la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <!-- Navbar Section -->
-    
     <nav class="navbar" id="navbar">
         <div class="navbar__container">
             <a href="#" id="navbar__logo"><p class="navbar__logo">RESUME</p></a>
@@ -48,6 +57,7 @@
             </div>
         
     </nav>
+    
     <!--hero Section-->
     <div class = "hero" id = "home">
             <div class="hero__container">
@@ -62,6 +72,7 @@
                 </video> 
             </div>
     </div>
+
     <!--about Section-->
     <div class="main" id="about">
         <div class="main__container">
@@ -143,6 +154,7 @@
             </div>
         </div>
     </div>
+
     <script src="app.js"></script>
     <script src="action.js"></script>
 </body>

@@ -1,3 +1,11 @@
+//Loading
+$(document).ready(function(){
+    setTimeout(function(){
+        $(".loading__wrapper").fadeOut(500);
+    },1000)
+})
+
+
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 //display Mobile Menu
