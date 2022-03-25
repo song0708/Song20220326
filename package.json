@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "nodejestut",
+  "version": "1.0.0",
+  "description": "Song20220325",
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song0708/Song20220228.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/song0708/Song20220228/issues"
+  },
+  "homepage": "https://github.com/song0708/Song20220228#readme"
+}
